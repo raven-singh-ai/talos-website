@@ -77,11 +77,11 @@
     <ellipse cx="42" cy="25" rx="4" ry="2" fill="#fff" opacity="0.6" transform="rotate(-20 42 25)"/>
   </g>
   
-  <!-- talos text (lowercase) -->
+  <!-- talos text (white) -->
   <text x="115" y="65" 
         font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" 
         font-size="48" 
         font-weight="600"
         letter-spacing="-1"
-        fill="#C4B5FD">talos</text>
+        fill="#FFFFFF">talos</text>
 </svg>
