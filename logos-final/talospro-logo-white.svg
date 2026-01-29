@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 280 100">
+  <defs>
+    <!-- White gradient for dark backgrounds -->
+    <linearGradient id="whiteGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="50%" stop-color="#F3F4F6"/>
+      <stop offset="100%" stop-color="#FFFFFF"/>
+    </linearGradient>
+  </defs>
+  
+  <!-- Icon (left side) -->
+  <g transform="translate(0, 0)">
+    <!-- Outer shield -->
+    <path d="M50 10 L85 25 L85 60 C85 75, 70 87, 50 95 C30 87, 15 75, 15 60 L15 25 Z" 
+          fill="none" stroke="url(#whiteGradient)" stroke-width="2" opacity="0.8"/>
+    
+    <!-- Inner geometric -->
+    <circle cx="50" cy="50" r="18" fill="url(#whiteGradient)" opacity="0.9"/>
+    <path d="M50 35 L60 50 L50 65 L40 50 Z" fill="#000" opacity="0.15"/>
+    <circle cx="50" cy="50" r="6" fill="url(#whiteGradient)"/>
+  </g>
+  
+  <!-- Text (right side) -->
+  <text x="105" y="60" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" 
+        font-size="42" font-weight="700" fill="#FFFFFF" letter-spacing="-1">
+    Talos<tspan font-weight="400" opacity="0.9">Pro</tspan>
+  </text>
+</svg>
