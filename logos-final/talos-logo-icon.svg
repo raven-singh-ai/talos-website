@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
   <defs>
     <!-- Main warm gradient: purple to coral -->
     <linearGradient id="warmGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -46,8 +46,9 @@
     </filter>
   </defs>
   
-  <!-- Crystal icon (scaled and positioned) -->
-  <g transform="translate(15, 0) scale(0.8)" filter="url(#outerGlow)">
+  <g filter="url(#outerGlow)">
+    <!-- Crystal facets - 5 visible faces creating a gem shape -->
+    
     <!-- Left face (darker) -->
     <polygon 
       points="50,8 20,40 30,85 50,55" 
@@ -85,12 +86,4 @@
     <!-- Specular highlight -->
     <ellipse cx="42" cy="25" rx="4" ry="2" fill="#fff" opacity="0.6" transform="rotate(-20 42 25)"/>
   </g>
-  
-  <!-- TalosPro text -->
-  <text x="115" y="65" 
-        font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" 
-        font-size="48" 
-        font-weight="700"
-        letter-spacing="-1.5"
-        fill="#FFFFFF">TalosPro</text>
 </svg>
