@@ -44,8 +44,8 @@
     </filter>
   </defs>
   
-  <!-- Crystal icon (scaled and positioned) -->
-  <g transform="translate(15, 0) scale(0.8)" filter="url(#outerGlow)">
+  <!-- Crystal icon (centered) -->
+  <g transform="translate(45, 0) scale(0.8)" filter="url(#outerGlow)">
     <!-- Left face (darker) -->
     <polygon 
       points="50,8 20,40 30,85 50,55" 
@@ -84,8 +84,8 @@
     <ellipse cx="42" cy="25" rx="4" ry="2" fill="#fff" opacity="0.6" transform="rotate(-20 42 25)"/>
   </g>
   
-  <!-- talos text (blue gradient from brand deck) -->
-  <text x="115" y="65" 
+  <!-- talos text (centered) -->
+  <text x="145" y="65" 
         font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" 
         font-size="48" 
         font-weight="600"
