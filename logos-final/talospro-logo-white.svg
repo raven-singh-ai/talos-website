@@ -45,7 +45,7 @@
   </defs>
   
   <!-- Crystal icon (centered) -->
-  <g transform="translate(45, 0) scale(0.8)" filter="url(#outerGlow)">
+  <g transform="translate(45, 0) scale(0.8)">
     <!-- Left face (darker) -->
     <polygon 
       points="50,8 20,40 30,85 50,55" 
