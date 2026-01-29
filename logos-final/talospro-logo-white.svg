@@ -25,11 +25,11 @@
       <stop offset="100%" stop-color="#7C3AED"/>
     </linearGradient>
     
-    <!-- Text gradient: bright gradient for dark backgrounds -->
+    <!-- Text gradient: very bright, nearly white with subtle tint -->
     <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#e9d5ff"/>
-      <stop offset="50%" stop-color="#bfdbfe"/>
-      <stop offset="100%" stop-color="#a7f3d0"/>
+      <stop offset="0%" stop-color="#f5f3ff"/>
+      <stop offset="50%" stop-color="#eff6ff"/>
+      <stop offset="100%" stop-color="#ecfdf5"/>
     </linearGradient>
     
     <!-- Outer glow -->
