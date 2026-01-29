@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 100">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 350 100">
   <defs>
     <!-- Main warm gradient: purple to coral -->
     <linearGradient id="warmGradient" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -24,15 +24,6 @@
       <stop offset="0%" stop-color="#6D28D9"/>
       <stop offset="100%" stop-color="#7C3AED"/>
     </linearGradient>
-    
-    <!-- Glow filter -->
-    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
-      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
-      <feMerge>
-        <feMergeNode in="coloredBlur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
     
     <!-- Outer glow -->
     <filter id="outerGlow" x="-50%" y="-50%" width="200%" height="200%">
@@ -86,11 +77,11 @@
     <ellipse cx="42" cy="25" rx="4" ry="2" fill="#fff" opacity="0.6" transform="rotate(-20 42 25)"/>
   </g>
   
-  <!-- TalosPro text -->
+  <!-- talos text (lowercase) -->
   <text x="115" y="65" 
         font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" 
         font-size="48" 
-        font-weight="700"
-        letter-spacing="-1.5"
-        fill="#FFFFFF">TalosPro</text>
+        font-weight="600"
+        letter-spacing="-1"
+        fill="#C4B5FD">talos</text>
 </svg>
