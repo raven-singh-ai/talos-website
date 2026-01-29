@@ -25,11 +25,11 @@
       <stop offset="100%" stop-color="#7C3AED"/>
     </linearGradient>
     
-    <!-- Text gradient: brand deck blue gradient -->
+    <!-- Text gradient: brand deck blue gradient (brightened for dark backgrounds) -->
     <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#a78bfa"/>
-      <stop offset="50%" stop-color="#60a5fa"/>
-      <stop offset="100%" stop-color="#34d399"/>
+      <stop offset="0%" stop-color="#c4b5fd"/>
+      <stop offset="50%" stop-color="#93c5fd"/>
+      <stop offset="100%" stop-color="#6ee7b7"/>
     </linearGradient>
     
     <!-- Outer glow -->
