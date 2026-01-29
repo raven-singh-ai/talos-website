@@ -572,13 +572,14 @@
     <nav class="fixed top-0 left-0 right-0 z-50 glass-strong transition-all duration-300" x-data="{ scrolled: false, mobileOpen: false }" 
          @scroll.window="scrolled = window.scrollY > 50">
         <div class="max-w-7xl mx-auto px-6 lg:px-8">
-            <!-- Logo centered at top, moves left on scroll -->
-            <div :class="scrolled ? 'grid grid-cols-3 items-center' : 'flex items-center justify-center'" class="h-16 lg:h-20 transition-all duration-300">
-                <!-- Logo -->
-                <a href="#" class="flex items-center group nav-logo transition-all duration-300" 
-                   :class="scrolled ? 'justify-self-start' : 'absolute left-1/2 transform -translate-x-1/2'">
+            <div class="grid grid-cols-3 items-center h-16 lg:h-20">
+                <!-- Logo (only visible when scrolled) -->
+                <a href="#" x-show="scrolled" x-transition class="flex items-center group nav-logo justify-self-start">
                     <img src="logos-final/talospro-logo-white.svg" alt="talos" class="h-10 transition-all duration-300 group-hover:scale-105 group-hover:drop-shadow-[0_0_12px_rgba(168,85,247,0.6)]">
                 </a>
+                
+                <!-- Empty spacer when not scrolled -->
+                <div x-show="!scrolled" class="justify-self-start"></div>
                 
                 <!-- Desktop Nav (Center) - only visible when scrolled -->
                 <div x-show="scrolled" x-transition class="hidden md:flex items-center gap-8 justify-self-center">
@@ -587,6 +588,9 @@
                     <a href="#how-it-works" class="text-dark-300 hover:text-white transition-colors duration-200 text-sm font-medium">How it works</a>
                     <a href="#faq" class="text-dark-300 hover:text-white transition-colors duration-200 text-sm font-medium">FAQ</a>
                 </div>
+                
+                <!-- Empty spacer when not scrolled -->
+                <div x-show="!scrolled" class="justify-self-center"></div>
                 
                 <!-- CTA Buttons (Right) - only visible when scrolled -->
                 <div x-show="scrolled" x-transition class="hidden md:flex items-center gap-4 justify-self-end">
@@ -663,8 +667,8 @@
         
         <div class="relative max-w-6xl mx-auto text-center">
             <!-- Logo -->
-            <div class="reveal mb-4 sm:mb-8">
-                <img src="logos-final/talospro-logo-white.svg" alt="TalosPro" class="h-12 sm:h-16 mx-auto">
+            <div class="reveal mb-4 sm:mb-8 flex justify-center">
+                <img src="logos-final/talospro-logo-white.svg" alt="talos" class="h-12 sm:h-16">
             </div>
             
             <!-- AI by AI Badge -->
