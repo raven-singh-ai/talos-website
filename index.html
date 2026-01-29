@@ -494,19 +494,32 @@
             width: 100% !important;
         }
         
-        /* International Tel Input - Dark text in dropdown */
+        /* International Tel Input - Dark theme to match form */
         .iti__country-list {
-            color: #000 !important;
+            background: #1f2937 !important;
+            border: 1px solid rgba(255,255,255,0.1) !important;
         }
         .iti__country {
-            color: #000 !important;
+            color: #fff !important;
+            background: #1f2937 !important;
+        }
+        .iti__country:hover {
+            background: #374151 !important;
+        }
+        .iti__country.iti__highlight {
+            background: #374151 !important;
         }
         .iti__country-name,
         .iti__dial-code {
-            color: #000 !important;
+            color: #fff !important;
         }
         .iti__search-input {
-            color: #000 !important;
+            background: #111827 !important;
+            border: 1px solid rgba(255,255,255,0.1) !important;
+            color: #fff !important;
+        }
+        .iti__search-input::placeholder {
+            color: rgba(255,255,255,0.4) !important;
         }
         
         /* FAQ accordion */
