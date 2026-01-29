@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <defs>
+    <!-- Main warm gradient: purple to coral -->
+    <linearGradient id="warmGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8B5CF6"/>
+      <stop offset="50%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#F97316"/>
+    </linearGradient>
+    
+    <!-- Highlight gradient for dimension -->
+    <linearGradient id="highlightGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C4B5FD"/>
+      <stop offset="100%" stop-color="#F9A8D4"/>
+    </linearGradient>
+    
+    <!-- Shadow gradient for depth -->
+    <linearGradient id="shadowGradient" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#7C3AED"/>
+      <stop offset="100%" stop-color="#9333EA"/>
+    </linearGradient>
+    
+    <!-- Deep face gradient -->
+    <linearGradient id="deepGradient" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#6D28D9"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    
+    <!-- Glow filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <!-- Outer glow -->
+    <filter id="outerGlow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-color="#A855F7" flood-opacity="0.5"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <g filter="url(#outerGlow)">
+    <!-- Crystal facets - 5 visible faces creating a gem shape -->
+    
+    <!-- Left face (darker) -->
+    <polygon 
+      points="50,8 20,40 30,85 50,55" 
+      fill="url(#deepGradient)"
+      opacity="0.95"/>
+    
+    <!-- Right face (main gradient) -->
+    <polygon 
+      points="50,8 80,40 70,85 50,55" 
+      fill="url(#warmGradient)"/>
+    
+    <!-- Bottom left face -->
+    <polygon 
+      points="30,85 50,55 50,92" 
+      fill="url(#shadowGradient)"
+      opacity="0.9"/>
+    
+    <!-- Bottom right face (warm) -->
+    <polygon 
+      points="70,85 50,55 50,92" 
+      fill="#EA580C"
+      opacity="0.85"/>
+    
+    <!-- Top highlight face -->
+    <polygon 
+      points="50,8 35,28 50,35 65,28" 
+      fill="url(#highlightGradient)"
+      opacity="0.9"/>
+    
+    <!-- Inner facet lines for detail -->
+    <line x1="50" y1="8" x2="50" y2="55" stroke="#fff" stroke-width="0.5" opacity="0.3"/>
+    <line x1="35" y1="28" x2="50" y2="55" stroke="#fff" stroke-width="0.3" opacity="0.2"/>
+    <line x1="65" y1="28" x2="50" y2="55" stroke="#fff" stroke-width="0.3" opacity="0.2"/>
+    
+    <!-- Specular highlight -->
+    <ellipse cx="42" cy="25" rx="4" ry="2" fill="#fff" opacity="0.6" transform="rotate(-20 42 25)"/>
+  </g>
+</svg>
