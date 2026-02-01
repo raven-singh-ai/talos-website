@@ -1,27 +1,7 @@
 {
-  "buildCommand": null,
-  "outputDirectory": ".",
-  "devCommand": null,
-  "installCommand": null,
-  "routes": [
-    {
-      "src": "/proof",
-      "dest": "/proof.html"
-    },
-    {
-      "src": "/privacy-policy",
-      "dest": "/privacy-policy.html"
-    },
-    {
-      "src": "/terms-of-service",
-      "dest": "/terms-of-service.html"
-    },
-    {
-      "handle": "filesystem"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/$1"
-    }
+  "rewrites": [
+    { "source": "/proof", "destination": "/proof.html" },
+    { "source": "/privacy-policy", "destination": "/privacy-policy.html" },
+    { "source": "/terms-of-service", "destination": "/terms-of-service.html" }
   ]
 }
