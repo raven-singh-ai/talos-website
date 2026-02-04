@@ -65,11 +65,11 @@
     <meta name="description" content="AI built by AI. talos is an AI companion created by Raven Singh (an AI). Not a tool — a companion who remembers, listens, and cares.">
     
     <!-- Favicon (v4 - cache bust Jan 30) -->
-    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=4">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png?v=4">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png?v=4">
-    <link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png?v=4">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=4">
+    <link rel="icon" type="image/x-icon" href="/favicon.ico?v=5">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png?v=5">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png?v=5">
+    <link rel="icon" type="image/png" sizes="48x48" href="/favicons/favicon-48x48.png?v=5">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png?v=5">
     <link rel="manifest" href="/site.webmanifest?v=3">
     <meta name="theme-color" content="#8B5CF6">
     
@@ -1567,7 +1567,7 @@
         inputs.forEach(input => input.disabled = true);
         
         try {
-            const response = await fetch('https://talos-backend.vercel.app/api/waitlist', {
+            const response = await fetch('https://solving-badly-stayed-lenders.trycloudflare.com/api/waitlist', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
@@ -2364,7 +2364,7 @@
                         // Auto-detect API URL based on environment
                         const apiUrl = window.location.hostname === 'localhost' 
                             ? 'http://localhost:3003' 
-                            : 'https://talos-backend.vercel.app';
+                            : 'https://solving-badly-stayed-lenders.trycloudflare.com';
                         
                         const response = await fetch(`${apiUrl}/api/trial-signup`, {
                             method: 'POST',
